@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+#todo{
+    border: 1px solid  white;
+    width: 450px;
+    position: absolute;
+    top: 100px;
+    padding: 20px;
+
+}
+.form{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+}
+
+#tasks{
+    padding: 10px 25px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: black;
+    border: 1px solid yellow;
+    border-radius: 10px;
+
+}
+
+.form-input{
+    width: 70%;
+}
+.form-input label{
+    font-size: 32px;
+}
+
+
+
+#todo .header{
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+.list{
+    border: 2px solid white;
+    list-style: none;
+    padding-bottom: 15px;
+    overflow-y: scroll;
+    height: 350px;
+}
+
+.list li{
+    border: 2px solid white;
+    width: 100%;
+    min-height: fit-content;
+    min-width: fit-content;
+    margin-top: 15px;
+    display: flex;
+    padding: 15px 10px;
+
+}
+
+.list input[type='checkbox']{
+    margin-right:20px;
+}
+.list li label{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.btn-container{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+}
+
+.btn{
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.btn-del{
+    background-color: red;
+
+}
+.btn-update{
+    background-color: rgb(120, 171, 243);
+}
+
+.btn-sub{
+    color: black;
+    background-color: greenyellow;
+    font-size: 1rem;
+
+}
+
+.task-done{
+    text-decoration: line-through;
+    color: rgb(153,153,153);
+}
